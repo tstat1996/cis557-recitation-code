@@ -1,0 +1,38 @@
+<%= form_for @comment, :html => {:class => "form-vertical center"} do |f| %>
+      
+      <div class="form-group">
+        <%= f.label :title, "Title:", class: "col-md-4 control-label" %>
+        <div class="col-md-8">
+          <%= f.text_field :title, class: "form-control" %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :text, "Body:", class: "col-md-4 control-label" %>
+        <div class="col-md-8">
+          <%= f.text_field :text, class: "form-control" %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :day, "Day:", class: "col-md-4 control-label" %>
+        <div class="col-md-8">
+          <%= f.number_field :day, class: "form-control" %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :month, "Month:", class: "col-md-4 control-label" %>
+        <div class="col-md-8">
+          <%= f.number_field :month, class: "form-control" %>
+        </div>
+      </div>
+
+
+      
+      
+
+      <%= f.submit "Submit", class: "btn btn-default btn-primary" %>  
+ <% end %>
+
+
